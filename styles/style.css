@@ -69,6 +69,9 @@ header {
 
 .banner-content {
     background: url(../images/Group-14.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
 }
 
