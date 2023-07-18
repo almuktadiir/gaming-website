@@ -63,7 +63,21 @@ header {
 /* banner part */
 .banner-container {
     display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
 
+.banner-content {
+    background: url(../images/Group-14.png);
+    width: 50%;
+}
+
+.banner-pic {
+    width: 50%;
+}
+
+.banner-pic img {
+    width: 100%;
 }
 
 
