@@ -14,6 +14,7 @@ body {
     padding: 12px 30px;
     border-radius: 48px;
     border: 0;
+    display: inline;
 }
 
 .txt-primary {
@@ -176,6 +177,65 @@ header {
 .card img {
     width: 100%;
 }
+
+/* hover part  */
+.card {
+    position: relative;
+}
+
+.card-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+
+}
+
+.overlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+    text-align: center;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    width: 100%;
+    height: 76%;
+}
+
+
+.overlay-btn i {
+    margin-top: 50%;
+    font-size: 40px;
+    color: #FFF;
+}
+
+.overlay-txt a {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF24BD;
+    text-decoration: none;
+    margin: 15px 0;
+    display: block;
+}
+
+.card:hover .card-img {
+    opacity: 0.3s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+/* .card img:hover {
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+} */
 
 .card p {
     color: #534C64;
@@ -385,6 +445,7 @@ ul.foot-icon>li {
 
     .btn-primary {
         margin: auto;
+        display: block;
     }
 
     #btn-ban {
