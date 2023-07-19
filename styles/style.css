@@ -23,7 +23,8 @@ body {
     margin: 0;
 }
 
-.title-color {
+.title-color,
+.foot-logo-title-color {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -275,6 +276,58 @@ button {
     display: none;
 }
 
+/* footer part  */
+footer {
+    background-color: #0B0223;
+    padding: 120px 250px;
+}
+
+.foot-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.foot-logo h3 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.foot-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.foot-container ul>li {
+    list-style: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ul.foot-icon>li {
+    font-size: 40px;
+    padding: 15px 0;
+}
+
+.foot-container ul.foot-conditions>li {
+    color: #9D9AA7;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0 10px;
+}
+
+.foot-container p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9D9AA7;
+}
+
 
 
 /******************* responsive part *******************/
@@ -393,6 +446,46 @@ button {
     .btn-row3-container button {
         margin: auto;
     }
+
+    /* footer part responsive */
+    footer {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+
+    .foot-container ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        gap: 33px;
+        margin: 8px auto;
+        width: 35%;
+        padding: 0;
+    }
+
+    .foot-container ul.foot-icon {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .foot-container ul.foot-icon>li {
+        padding: 0;
+    }
+
+    .foot-container ul.foot-conditions {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        margin: 44px auto;
+    }
+
+    .foot-container ul.foot-conditions>li {
+        margin: 0;
+    }
+
+    .foot-container p {
+        padding: 0 482px;
+    }
 }
 
 
@@ -474,5 +567,45 @@ button {
 
     .btn-row3-container button {
         margin: auto;
+    }
+
+    /* footer part responsive */
+    footer {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+
+    .foot-container ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        gap: 33px;
+        margin: 8px auto;
+        width: 35%;
+        padding: 0;
+    }
+
+    .foot-container ul.foot-icon {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .foot-container ul.foot-icon>li {
+        padding: 0;
+    }
+
+    .foot-container ul.foot-conditions {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        margin: 44px auto;
+    }
+
+    .foot-container ul.foot-conditions>li {
+        margin: 0;
+    }
+
+    .foot-container p {
+        padding: 0 482px;
     }
 }
