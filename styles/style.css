@@ -215,6 +215,7 @@ header {
 
 .instant-pic2 {
     position: relative;
+    margin-bottom: 100px;
 }
 
 .instant-pic2 img {
@@ -226,9 +227,57 @@ header {
 }
 
 
+/* many more buttons part */
+.more-btn-container {
+    width: 1200px;
+    margin: 80px auto;
+}
+
+.btn-row1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.btn-row1 button:hover {
+    border: 1px solid #FF42A5;
+    border-radius: 50px;
+    color: #FF42A5;
+    font-weight: 600;
+}
+
+.btn-row2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 30px;
+
+}
+
+.btn-row2 button:hover {
+    border: 1px solid #FF42A5;
+    border-radius: 50px;
+    color: #FF42A5;
+    font-weight: 600;
+}
+
+button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.btn-row3 {
+    display: none;
+}
 
 
-/* responsive part */
+
+/******************* responsive part *******************/
 
 /* mobile device */
 @media screen and (max-width:576px) {
@@ -281,6 +330,14 @@ header {
         margin-left: 115px;
     }
 
+    .btn-primary {
+        margin: auto;
+    }
+
+    #btn-ban {
+        margin: 15px auto;
+    }
+
 
     /* online games responsive */
     .card-container {
@@ -297,6 +354,7 @@ header {
         text-align: center;
     }
 
+    /* instant part  */
     .instant-container {
         flex-direction: column;
     }
@@ -307,6 +365,32 @@ header {
     }
 
     .instant-pic {
+        margin: auto;
+    }
+
+
+    /* many more btn responsive */
+    .btn-row1 {
+        display: none;
+    }
+
+    .btn-row2 {
+        display: none;
+    }
+
+    .btn-row3 {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .btn-row3-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .btn-row3-container button {
         margin: auto;
     }
 }
@@ -320,10 +404,6 @@ header {
         width: fit-content;
     }
 
-    .nav-container {
-        width: 70%;
-    }
-
     .banner {
         background: none;
     }
@@ -335,6 +415,14 @@ header {
 
     .banner-content {
         margin-top: 100px;
+    }
+
+    .btn-primary {
+        margin: auto;
+    }
+
+    #btn-ban {
+        margin: 15px auto;
     }
 
     .card-container {
@@ -360,6 +448,31 @@ header {
     }
 
     .instant-pic {
+        margin: auto;
+    }
+
+    /* many more btn responsive */
+    .btn-row1 {
+        display: none;
+    }
+
+    .btn-row2 {
+        display: none;
+    }
+
+    .btn-row3 {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .btn-row3-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .btn-row3-container button {
         margin: auto;
     }
 }
