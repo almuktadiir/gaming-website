@@ -184,8 +184,46 @@ header {
 }
 
 
+/* play instant part */
+.instant-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
 
+.instant-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    gap: 24px;
+    width: 55%;
+}
 
+.instant-content p {
+    padding: 0 150px;
+}
+
+.instant-pic {
+    width: 45%;
+}
+
+.instant-pic img {
+    width: 100%;
+}
+
+.instant-pic2 {
+    position: relative;
+}
+
+.instant-pic2 img {
+    position: absolute;
+    width: 315px;
+    height: 350px;
+    top: -290px;
+    left: -110px;
+}
 
 
 
@@ -258,7 +296,23 @@ header {
     .card p {
         text-align: center;
     }
+
+    .instant-container {
+        flex-direction: column;
+    }
+
+    .instant-content {
+        margin: auto;
+        text-align: center;
+    }
+
+    .instant-pic {
+        margin: auto;
+    }
 }
+
+
+
 
 /* tablet device */
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -294,5 +348,18 @@ header {
 
     .card img {
         width: 100%;
+    }
+
+    .instant-container {
+        flex-direction: column;
+    }
+
+    .instant-content {
+        margin: auto;
+        text-align: center;
+    }
+
+    .instant-pic {
+        margin: auto;
     }
 }
